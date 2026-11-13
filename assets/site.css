@@ -1,0 +1,265 @@
+#auxeon{
+  /* Brand palette — sampled from the Auxeon logo */
+  --ax-red:#E3182A;        /* wordmark red   */
+  --ax-red-light:#F2444F;  /* gear highlight */
+  --ax-red-deep:#9D0D17;   /* circuit traces */
+  --ax-maroon:#6E1A22;     /* "CONSULTING"   */
+  --ax-glow:rgba(227,24,42,.45);
+  /* Dark theme (default) */
+  --ax-bg:#0B0607; --ax-panel:#140A0C; --ax-panel-2:#1C0E11;
+  --ax-line:rgba(255,255,255,.08); --ax-head:#FFFFFF; --ax-text:#EDE6E7; --ax-muted:#A8999C;
+  font-family:'Inter',system-ui,sans-serif; color:var(--ax-text); background:var(--ax-bg);
+  line-height:1.6; overflow-x:hidden; position:relative;
+}
+#auxeon .ax-light{
+  --ax-bg:#FFFFFF; --ax-panel:#FFFFFF; --ax-panel-2:#FBF6F7;
+  --ax-line:rgba(110,26,34,.12); --ax-head:#1A0B0E; --ax-text:#2A1D20; --ax-muted:#6B5C60;
+  background:var(--ax-bg); color:var(--ax-text);
+}
+#auxeon .ax-tint{background:#F8F2F3}
+#auxeon *{box-sizing:border-box;margin:0;padding:0}
+#auxeon a{color:inherit;text-decoration:none}
+#auxeon img{display:block;max-width:100%}
+#auxeon h1,#auxeon h2,#auxeon h3{font-family:'Exo 2','Inter',sans-serif;color:var(--ax-head);letter-spacing:-.01em;line-height:1.15}
+#auxeon .ax-wrap{max-width:1180px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
+#auxeon section{padding:110px 0;position:relative}
+#auxeon .ax-eyebrow{display:inline-flex;align-items:center;gap:12px;font:400 11px/1 'Michroma','Inter',sans-serif;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--ax-red);margin-bottom:18px}
+#auxeon .ax-eyebrow::before{content:"";width:28px;height:2px;background:var(--ax-red);box-shadow:0 0 12px var(--ax-glow)}
+#auxeon .ax-h2{font-size:clamp(30px,4vw,46px);font-weight:700;margin-bottom:18px}
+#auxeon .ax-lead{color:var(--ax-muted);font-size:17px;max-width:680px}
+
+/* ---------- Background FX ---------- */
+#auxeon .ax-grid{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(var(--ax-line) 1px,transparent 1px),linear-gradient(90deg,var(--ax-line) 1px,transparent 1px);
+  background-size:64px 64px;mask-image:radial-gradient(ellipse at 60% 40%,#000 25%,transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse at 60% 40%,#000 25%,transparent 75%)}
+#auxeon .ax-orb{position:absolute;border-radius:50%;filter:blur(100px);z-index:0;pointer-events:none}
+
+/* ---------- Nav ---------- */
+#auxeon .ax-nav{position:sticky;top:0;z-index:20;background:rgba(11,6,7,.78);backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--ax-line)}
+#auxeon .ax-nav .ax-wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+#auxeon .ax-logo{display:flex;align-items:center;gap:12px}
+#auxeon .ax-logo img{height:42px;width:auto}
+#auxeon .ax-wordmark{font:400 17px/1 'Michroma','Inter',sans-serif;letter-spacing:.08em;color:var(--ax-red)}
+#auxeon .ax-wordmark small{display:block;margin-top:6px;font-size:8px;letter-spacing:.42em;color:#C9B9BC}
+#auxeon .ax-links{display:flex;gap:30px;font-size:14px;color:var(--ax-muted)}
+#auxeon .ax-links a:hover{color:#fff}
+#auxeon .ax-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:4px;
+  font:600 14px 'Exo 2','Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;transition:.25s;cursor:pointer;border:0}
+#auxeon .ax-btn-red{background:linear-gradient(135deg,var(--ax-red-light),var(--ax-red) 45%,var(--ax-red-deep));color:#fff;box-shadow:0 8px 30px -8px var(--ax-glow)}
+#auxeon .ax-btn-red:hover{transform:translateY(-2px);box-shadow:0 14px 40px -8px var(--ax-glow)}
+#auxeon .ax-btn-ghost{border:1px solid rgba(255,255,255,.25);color:#fff;background:transparent}
+#auxeon .ax-btn-ghost:hover{border-color:var(--ax-red);color:var(--ax-red-light)}
+#auxeon .ax-nav .ax-btn{padding:10px 18px;font-size:12px}
+
+/* ---------- Hero ---------- */
+#auxeon .ax-hero{padding:140px 0 130px;min-height:88vh;display:flex;align-items:center;
+  background:radial-gradient(ellipse at 78% 45%,#2A0A10 0%,var(--ax-bg) 60%)}
+#auxeon .ax-hero .ax-wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+#auxeon .ax-hero h1{font-size:clamp(40px,5.8vw,76px);font-weight:700}
+#auxeon .ax-hero h1 span{background:linear-gradient(90deg,var(--ax-red-light),var(--ax-red) 60%,var(--ax-red-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+#auxeon .ax-tagline{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 22px;font:400 13px 'Michroma','Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase}
+#auxeon .ax-tagline b{font-weight:400;color:#fff}
+#auxeon .ax-tagline i{font-style:normal;color:var(--ax-red)}
+#auxeon .ax-hero .ax-lead{font-size:19px;margin-bottom:40px}
+#auxeon .ax-cta{display:flex;gap:16px;flex-wrap:wrap}
+#auxeon .ax-emblem{position:relative;aspect-ratio:1;width:100%;max-width:460px;justify-self:end}
+#auxeon .ax-emblem svg{position:absolute;inset:-14%;width:128%;height:128%}
+#auxeon .ax-emblem img{position:absolute;inset:16%;width:68%;height:auto;filter:drop-shadow(0 0 40px rgba(227,24,42,.35));animation:axFloat 6s ease-in-out infinite}
+#auxeon .ax-spin{transform-origin:300px 300px;animation:axSpin 40s linear infinite}
+#auxeon .ax-spin-r{transform-origin:300px 300px;animation:axSpin 70s linear infinite reverse}
+@keyframes axSpin{to{transform:rotate(360deg)}}
+@keyframes axFloat{50%{transform:translateY(-10px)}}
+#auxeon .ax-trace{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5}
+#auxeon .ax-trace path{stroke-dasharray:6 900;animation:axPulse 6s linear infinite}
+@keyframes axPulse{from{stroke-dashoffset:900}to{stroke-dashoffset:0}}
+
+/* ---------- Pillars ---------- */
+#auxeon .ax-strip{border-top:1px solid var(--ax-line);border-bottom:1px solid var(--ax-line);background:var(--ax-panel)}
+#auxeon .ax-strip .ax-wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+#auxeon .ax-p{padding:34px 28px;border-right:1px solid var(--ax-line)}
+#auxeon .ax-p:last-child{border-right:0}
+#auxeon .ax-num{font:400 11px 'Michroma','Inter',sans-serif;color:var(--ax-red);letter-spacing:.2em}
+#auxeon .ax-strip h3{font-size:22px;margin:8px 0 6px}
+#auxeon .ax-strip p{color:var(--ax-muted);font-size:14px}
+
+/* ---------- About (light) ---------- */
+#auxeon .ax-about{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+#auxeon .ax-about .ax-lead+.ax-lead{margin-top:16px}
+#auxeon .ax-brandcard{background:#fff;border:1px solid var(--ax-line);border-radius:14px;padding:40px;
+  box-shadow:0 30px 70px -40px rgba(110,26,34,.45);position:relative;overflow:hidden}
+#auxeon .ax-brandcard::before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--ax-red-light),var(--ax-red),var(--ax-maroon))}
+#auxeon .ax-brandcard img{width:150px;margin:0 auto 28px}
+#auxeon .ax-values{display:grid;grid-template-columns:1fr;gap:14px}
+#auxeon .ax-value{background:var(--ax-panel-2);border-radius:8px;padding:22px 24px;border-left:3px solid var(--ax-red)}
+#auxeon .ax-value h3{font-size:18px;margin-bottom:6px}
+#auxeon .ax-value p{font-size:14.5px;color:var(--ax-muted)}
+
+/* ---------- Cards (services, light) ---------- */
+#auxeon .ax-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:54px}
+#auxeon .ax-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#auxeon .ax-card{background:var(--ax-panel);border:1px solid var(--ax-line);border-radius:10px;padding:32px 28px;position:relative;transition:.3s;overflow:hidden}
+#auxeon .ax-card::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--ax-red),var(--ax-maroon));transition:.35s}
+#auxeon .ax-card:hover{transform:translateY(-6px);box-shadow:0 26px 60px -32px rgba(110,26,34,.5);border-color:rgba(227,24,42,.3)}
+#auxeon .ax-card:hover::after{width:100%}
+#auxeon .ax-icon{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;margin-bottom:22px;
+  background:linear-gradient(135deg,rgba(242,68,79,.14),rgba(157,13,23,.08));border:1px solid rgba(227,24,42,.3)}
+#auxeon .ax-icon svg{width:24px;height:24px;stroke:var(--ax-red);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#auxeon .ax-card h3{font-size:20px;margin-bottom:10px}
+#auxeon .ax-card p{color:var(--ax-muted);font-size:14.5px;margin-bottom:16px}
+#auxeon .ax-card ul{list-style:none;display:grid;gap:7px}
+#auxeon .ax-card li{font-size:13.5px;color:var(--ax-text);padding-left:18px;position:relative}
+#auxeon .ax-card li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;border:1.5px solid var(--ax-red)}
+
+/* ---------- Products (dark) ---------- */
+#auxeon .ax-products{background:linear-gradient(180deg,#120709,#0B0607)}
+#auxeon .ax-prod{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ax-line);border:1px solid var(--ax-line);border-radius:10px;overflow:hidden}
+#auxeon .ax-prod>div,#auxeon .ax-prod>a{display:block;background:#0E0708;padding:34px 30px;transition:.3s}
+#auxeon .ax-more{display:inline-block;margin-top:16px;font-style:normal;font-size:13px;font-weight:600;letter-spacing:.06em;color:#F2444F;transition:.25s}
+#auxeon .ax-prod>a:hover .ax-more{transform:translateX(4px)}
+#auxeon .ax-prod .ax-icon{margin-bottom:20px}
+#auxeon .ax-prod>div:hover,#auxeon .ax-prod>a:hover{background:#1E0A0E}
+#auxeon .ax-prod span{font:400 10px 'Michroma','Inter',sans-serif;letter-spacing:.2em;color:var(--ax-red-light)}
+#auxeon .ax-prod h3{font-size:18px;margin:12px 0 8px}
+#auxeon .ax-prod p{font-size:14px;color:var(--ax-muted)}
+
+/* ---------- Approach (light) ---------- */
+#auxeon .ax-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+#auxeon .ax-step{border-top:1px solid var(--ax-line);padding-top:24px;position:relative}
+#auxeon .ax-step::before{counter-increment:s;content:"0" counter(s);font:700 46px 'Exo 2','Inter',sans-serif;color:transparent;
+  -webkit-text-stroke:1.2px var(--ax-red);display:block;margin-bottom:8px}
+#auxeon .ax-step::after{content:"";position:absolute;top:-1px;left:0;width:46px;height:2px;background:var(--ax-red)}
+#auxeon .ax-step h3{font-size:18px;margin-bottom:8px}
+#auxeon .ax-step p{font-size:14px;color:var(--ax-muted)}
+
+/* ---------- Contact (dark) ---------- */
+#auxeon .ax-contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+#auxeon .ax-cbox{background:linear-gradient(150deg,#3A0D14 0%,#1A0A0D 55%,#120809 100%);border:1px solid rgba(227,24,42,.3);border-radius:12px;padding:44px;position:relative;overflow:hidden}
+#auxeon .ax-cbox img.ax-wm{position:absolute;right:-60px;bottom:-60px;width:260px;opacity:.12;pointer-events:none}
+#auxeon .ax-cbox h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:14px}
+#auxeon .ax-cbox .ax-lead{margin-bottom:32px}
+#auxeon .ax-info{display:grid;gap:18px;align-content:center}
+#auxeon .ax-row{display:flex;gap:18px;align-items:flex-start;background:var(--ax-panel);border:1px solid var(--ax-line);border-radius:10px;padding:22px 24px;transition:.25s}
+#auxeon a.ax-row:hover{border-color:rgba(227,24,42,.5)}
+#auxeon .ax-row .ax-icon{margin:0;flex:0 0 44px;width:44px;height:44px}
+#auxeon .ax-row small{display:block;font:400 9.5px 'Michroma','Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--ax-muted);margin-bottom:6px}
+#auxeon .ax-row div{font-size:15px;color:#fff;word-break:break-word}
+
+/* ---------- Footer ---------- */
+#auxeon .ax-foot{border-top:1px solid var(--ax-line);padding:34px 0;font-size:13px;color:var(--ax-muted)}
+#auxeon .ax-foot .ax-wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+#auxeon .ax-foot .ax-logo img{height:32px}
+#auxeon .ax-foot .ax-wordmark{font-size:13px}
+
+/* ---------- Reveal ---------- */
+#auxeon .ax-reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+#auxeon .ax-reveal.ax-in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:980px){
+  #auxeon .ax-cards,#auxeon .ax-prod,#auxeon .ax-steps{grid-template-columns:1fr 1fr}
+  #auxeon .ax-about,#auxeon .ax-contact,#auxeon .ax-hero .ax-wrap{grid-template-columns:1fr;gap:44px}
+  #auxeon .ax-emblem{justify-self:center;max-width:320px;order:-1}
+  #auxeon .ax-links{display:none}
+}
+@media(max-width:640px){
+  #auxeon section{padding:80px 0}
+  #auxeon .ax-hero{padding:90px 0 80px;min-height:auto}
+  #auxeon .ax-emblem{max-width:230px}
+  #auxeon .ax-cards,#auxeon .ax-prod,#auxeon .ax-steps,#auxeon .ax-values,#auxeon .ax-strip .ax-wrap{grid-template-columns:1fr}
+  #auxeon .ax-p{border-right:0;border-bottom:1px solid var(--ax-line)}
+  #auxeon .ax-cbox,#auxeon .ax-brandcard{padding:30px 24px}
+  #auxeon .ax-nav .ax-btn{display:none}
+}
+@media(prefers-reduced-motion:reduce){#auxeon *{animation:none!important;transition:none!important}#auxeon .ax-reveal{opacity:1;transform:none}}
+
+/* ---------- Standalone page ---------- */
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:#0B0607;-webkit-font-smoothing:antialiased}
+#auxeon .ax-burger{display:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.18);border-radius:6px;background:transparent;cursor:pointer;position:relative}
+#auxeon .ax-burger span,#auxeon .ax-burger span::before,#auxeon .ax-burger span::after{position:absolute;left:11px;width:18px;height:2px;background:#fff;transition:.25s;content:""}
+#auxeon .ax-burger span{top:19px}
+#auxeon .ax-burger span::before{left:0;top:-6px}
+#auxeon .ax-burger span::after{left:0;top:6px}
+#auxeon .ax-nav.ax-open .ax-burger span{background:transparent}
+#auxeon .ax-nav.ax-open .ax-burger span::before{top:0;transform:rotate(45deg)}
+#auxeon .ax-nav.ax-open .ax-burger span::after{top:0;transform:rotate(-45deg)}
+@media(max-width:980px){
+  #auxeon .ax-burger{display:block}
+  #auxeon .ax-nav.ax-open .ax-links{display:flex;flex-direction:column;gap:0;position:absolute;top:72px;left:0;right:0;
+    background:rgba(11,6,7,.97);border-bottom:1px solid rgba(255,255,255,.08);padding:8px 28px 20px}
+  #auxeon .ax-nav.ax-open .ax-links a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:16px;color:#fff}
+}
+
+/* =================== Solution subpages =================== */
+#auxeon .ax-links a.ax-active{color:#fff}
+#auxeon .ax-crumb{font-size:13px;color:var(--ax-muted);margin-bottom:26px;display:flex;gap:8px;flex-wrap:wrap}
+#auxeon .ax-crumb a:hover{color:var(--ax-red-light)}
+#auxeon .ax-crumb span{color:var(--ax-red)}
+#auxeon .ax-phero{padding:120px 0 100px;background:radial-gradient(ellipse at 80% 40%,#2A0A10 0%,var(--ax-bg) 62%)}
+#auxeon .ax-phero .ax-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+#auxeon .ax-phero h1{font-size:clamp(38px,5vw,64px);font-weight:700;margin-bottom:18px}
+#auxeon .ax-phero .ax-badge{width:60px;height:60px;border-radius:14px;display:grid;place-items:center;margin-bottom:24px;
+  background:linear-gradient(135deg,rgba(242,68,79,.25),rgba(157,13,23,.15));border:1px solid rgba(227,24,42,.45);box-shadow:0 0 40px -10px var(--ax-glow)}
+#auxeon .ax-phero .ax-badge svg{width:30px;height:30px;stroke:var(--ax-red-light);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+#auxeon .ax-phero .ax-lead{font-size:19px;margin-bottom:36px}
+
+/* media slots */
+#auxeon .ax-media{position:relative;border-radius:14px;overflow:hidden;background:var(--ax-panel-2);border:1px solid var(--ax-line);margin:0}
+#auxeon .ax-r169{aspect-ratio:16/9}
+#auxeon .ax-r43{aspect-ratio:4/3}
+#auxeon .ax-media img,#auxeon .ax-media video,#auxeon .ax-media iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;display:block}
+#auxeon .ax-media video{object-fit:contain;background:#000}
+#auxeon .ax-ph{display:none}
+#auxeon .ax-missing img{display:none}
+#auxeon .ax-missing .ax-ph{display:flex;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px;
+  border:1.5px dashed rgba(227,24,42,.5);border-radius:14px;color:var(--ax-muted);font-size:13px;
+  background:repeating-linear-gradient(135deg,rgba(227,24,42,.05) 0 12px,transparent 12px 24px)}
+#auxeon .ax-ph svg{width:34px;height:34px;stroke:var(--ax-red);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:4px}
+#auxeon .ax-ph b{font:600 15px 'Exo 2','Inter',sans-serif;color:var(--ax-head)}
+#auxeon .ax-ph code{font:500 11.5px/1.4 ui-monospace,Menlo,Consolas,monospace;color:var(--ax-head);background:rgba(227,24,42,.14);padding:4px 8px;border-radius:4px;overflow-wrap:anywhere;max-width:100%}
+#auxeon .ax-glowframe{box-shadow:0 40px 90px -40px rgba(227,24,42,.55)}
+
+/* overview */
+#auxeon .ax-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+#auxeon .ax-intro .ax-lead+.ax-lead{margin-top:16px}
+
+/* use cases */
+#auxeon .ax-split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+#auxeon .ax-uses{list-style:none;display:grid;gap:14px;counter-reset:u}
+#auxeon .ax-uses li{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:20px 22px;border:1px solid var(--ax-line);border-radius:10px;background:var(--ax-panel);transition:.25s}
+#auxeon .ax-uses li:hover{border-color:rgba(227,24,42,.45)}
+#auxeon .ax-uses li::before{counter-increment:u;content:"0" counter(u);font:700 26px 'Exo 2','Inter',sans-serif;color:transparent;-webkit-text-stroke:1px var(--ax-red-light)}
+#auxeon .ax-uses h3{font-size:17px;margin-bottom:4px}
+#auxeon .ax-uses p{font-size:14px;color:var(--ax-muted)}
+
+/* benefits */
+#auxeon .ax-bens{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+#auxeon .ax-ben{padding:28px 24px;border-radius:10px;background:var(--ax-panel);border:1px solid var(--ax-line);position:relative;overflow:hidden}
+#auxeon .ax-ben::before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--ax-red-light),var(--ax-red),var(--ax-maroon))}
+#auxeon .ax-ben h3{font-size:18px;margin-bottom:6px}
+#auxeon .ax-ben p{font-size:14px;color:var(--ax-muted)}
+
+/* gallery */
+#auxeon .ax-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+
+/* other solutions */
+#auxeon .ax-others{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+#auxeon .ax-other{display:flex;flex-direction:column;gap:12px;padding:22px 20px;border-radius:10px;border:1px solid var(--ax-line);background:var(--ax-panel);transition:.25s}
+#auxeon .ax-other:hover{transform:translateY(-4px);border-color:rgba(227,24,42,.45);box-shadow:0 20px 40px -28px rgba(110,26,34,.6)}
+#auxeon .ax-other .ax-icon{margin:0;width:42px;height:42px}
+#auxeon .ax-other b{font:600 16px 'Exo 2','Inter',sans-serif;color:var(--ax-head)}
+#auxeon .ax-other small{font-size:12.5px;color:var(--ax-red);font-weight:600}
+
+@media(max-width:980px){
+  #auxeon .ax-phero .ax-wrap,#auxeon .ax-intro,#auxeon .ax-split{grid-template-columns:1fr;gap:40px}
+  #auxeon .ax-bens{grid-template-columns:1fr 1fr}
+  #auxeon .ax-others{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:640px){
+  #auxeon .ax-phero{padding:70px 0 70px}
+  #auxeon .ax-bens,#auxeon .ax-gallery{grid-template-columns:1fr}
+  #auxeon .ax-others{grid-template-columns:1fr 1fr}
+}
