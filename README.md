@@ -1,2 +1,0 @@
-# auxeonconsulting-site
-Auxeon Consulting
