@@ -221,6 +221,8 @@ body{margin:0;background:#0B0607;-webkit-font-smoothing:antialiased}
 #auxeon .ax-ph b{font:600 15px 'Exo 2','Inter',sans-serif;color:var(--ax-head)}
 #auxeon .ax-ph code{font:500 11.5px/1.4 ui-monospace,Menlo,Consolas,monospace;color:var(--ax-head);background:rgba(227,24,42,.14);padding:4px 8px;border-radius:4px;overflow-wrap:anywhere;max-width:100%}
 #auxeon .ax-glowframe{box-shadow:0 40px 90px -40px rgba(227,24,42,.55)}
+#auxeon .ax-vcap{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13.5px;color:var(--ax-muted)}
+#auxeon .ax-vcap svg{flex:0 0 18px;width:18px;height:18px;margin-top:1px;stroke:var(--ax-red);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 
 /* overview */
 #auxeon .ax-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
