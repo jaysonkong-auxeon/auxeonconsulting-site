@@ -2,37 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://auxeonconsulting.com/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://auxeonconsulting.com/it-strategy-advisory.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://auxeonconsulting.com/digital-transformation.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://auxeonconsulting.com/programme-project-management.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://auxeonconsulting.com/solution-architecture-integration.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://auxeonconsulting.com/cybersecurity.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://auxeonconsulting.com/managed-services.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://auxeonconsulting.com/data-center-solutions.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://auxeonconsulting.com/ai-solutions.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://auxeonconsulting.com/enterprise-solutions.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://auxeonconsulting.com/bss-oss.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://auxeonconsulting.com/smart-city.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://auxeonconsulting.com/iot-devices.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
