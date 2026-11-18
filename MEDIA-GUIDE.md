@@ -8,12 +8,10 @@ To use your own photos or videos instead, upload a file with **exactly the same 
 
 | Page | File | Images folder | Video |
 |---|---|---|---|
-| IT Strategy & Advisory | `it-strategy-advisory.html` | `images/it-strategy-advisory/` | `videos/it-strategy-advisory.mp4` |
-| Digital Transformation | `digital-transformation.html` | `images/digital-transformation/` | `videos/digital-transformation.mp4` |
-| Programme & Project Management | `programme-project-management.html` | `images/programme-project-management/` | `videos/programme-project-management.mp4` |
-| Solution Architecture & Integration | `solution-architecture-integration.html` | `images/solution-architecture-integration/` | `videos/solution-architecture-integration.mp4` |
-| Cybersecurity | `cybersecurity.html` | `images/cybersecurity/` | `videos/cybersecurity.mp4` |
-| Operations & Managed Services | `managed-services.html` | `images/managed-services/` | `videos/managed-services.mp4` |
+| Technology Advisory | `technology-advisory.html` | `images/technology-advisory/` | `videos/technology-advisory.mp4` |
+| Project Delivery | `project-delivery.html` | `images/project-delivery/` | `videos/project-delivery.mp4` |
+| Systems Integration | `systems-integration.html` | `images/systems-integration/` | `videos/systems-integration.mp4` |
+| Managed Services | `managed-services.html` | `images/managed-services/` | `videos/managed-services.mp4` |
 
 ## Solution pages
 
